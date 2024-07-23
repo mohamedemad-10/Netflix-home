@@ -1,0 +1,406 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: fit-content;
+    color: white;
+    background: black;
+    object-fit: cover;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+.container{
+    width: 100%;
+}
+.container::before{
+    content: "";
+    background-image: url(./images/gamuha6i.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    height: 670px;
+    width: 100%;
+    opacity: 0.3;
+    z-index: -1;
+}
+.container .navbar{
+    height: 100px;
+    display: flex;
+}
+.container .navbar .left{
+    height: 100%;
+    display: flex;
+    float: left;
+}
+.container .navbar .left img{
+    height: 100px;
+    position: absolute;
+    left: 160px;
+}
+.container .navbar .right{
+    display: flex;
+    height: 100px;
+    float: right;
+    position: absolute;
+    right: 150px;
+}
+.container .navbar .right .language{
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    padding: 7px 10px;
+    color: white;
+    background: none;
+    cursor: pointer;
+    margin-right: 15px;
+}
+ .language option{
+    background-color: grey;
+}
+ .right button{
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 7px 17px;
+    background: #e50914;
+    cursor: pointer;
+    outline: none;
+    border-radius: 4px;
+    border: none;
+}
+.container .navbar .right button a{
+    text-decoration: none;
+    color: white;
+}
+.container .head{
+    padding: 70px 45px;
+}
+.container .head .content{
+    width: 950px;
+    margin: auto;
+    padding: 75px 0;
+    text-align: center;
+}
+.container .head .content h1{
+    width: 900px;
+    margin: auto;
+    font-size: 45px;
+    text-align: center;
+    font-weight: bold;
+}
+.container .head .content h3{
+    width: 650px;
+    margin: auto;
+    font-size: 1.6rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.753);
+}
+.container .head .content form h3{
+    font-size: 1.3rem;
+    margin: auto;
+    text-align: center;
+}
+.container .head .content form .email{
+    width: 1000px;
+    margin: auto;
+}
+.container .head .content form .email input{
+    height: 60px;
+    width: 400px;
+    margin: 10px;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: rgba(23, 21, 21, 0.648);
+   
+}
+.container .head .content form .email input:focus{
+    color: white;
+    font-size: 17px;
+    outline: none;
+    
+}
+.container .head .content form .email button{
+    margin: 10px;
+    height: 50px;
+    width: 180px;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    padding: 7px 17px;
+    background: #e50914;
+    cursor: pointer;
+    outline: none;
+   border-radius: 5px;
+    border: none;
+    margin-left: -5px;
+}
+.container .head .content form .email button:hover{
+    background-color: #f40612;
+}
+.container .head .content form .email button a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about .text {
+    align-items: center;
+    margin: auto;
+}
+.about .text h1{
+    font-size:50px;
+}
+.about .pho img{
+    width: 600px;
+    height: 450px;
+    position: relative;
+}
+.about .pho{
+    margin-right: 70px;
+}
+.about .pho video{
+    position: absolute;
+    bottom: -270px;
+    right: 220px;
+}
+.line{
+    width: 100%;
+    height: 9px;
+    background-color: rgba(128, 128, 128, 0.738);
+}
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 600px;
+}
+.info .ph{
+    margin: 150px;
+}
+.info .text1{
+    align-items: center;
+    margin-bottom:100px;
+    margin-right: 100px;
+    margin-left: -190px;
+}
+.info .text1 h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+.info .text1 .h2{
+    font-size: 23px;
+}
+
+.info .ph .Download{
+    align-items: center;
+    width: 500px;
+    height: 400px;
+    position: relative;
+    
+}
+.info .ph .devices{
+    position: absolute;
+    bottom: -900px;
+    left: 545px;
+    width: 100px;
+    height: 100px;
+}
+
+
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about .text {
+    align-items: center;
+    margin: auto;
+}
+.about .text h1{
+    font-size:50px;
+}
+.about .pho .img{
+    width: 600px;
+    height: 450px;
+    position: relative;
+    z-index: 3;
+  
+}
+
+.about .pho{
+    margin-right: 70px;
+}
+.about .pho .video{
+    width: 380px;
+    height: 250px;
+    position: absolute;
+    bottom: -1440px;
+    right: 290px;
+    z-index: 2;
+}
+.info .ph .Download1{
+    width: 600px;
+    height: 450px;
+}
+.buttons{
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.buttons .head h1{
+    font-size: 55px;
+    font-weight: bold;
+}
+.btn{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+.btn .bn{
+    display: flex;
+    justify-content: space-between;
+align-items: center;
+margin: auto;
+cursor: pointer;
+    width: 70%;
+    height: 80px;
+    background-color: rgba(128, 128, 128, 0.281);
+    transition: all ease-in;
+}
+.btn .bn:hover{
+    background-color:rgba(128, 128, 128, 0.547) ;
+    transition: calc(.2s);
+}
+
+.btn .bn h3 , span{
+    margin: 15px;
+    font-size: 27px;
+}
+.btn .bn h3 {
+    padding: 8px;
+    font-family:inherit;
+}
+.btn .p{
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    object-fit: cover;
+    margin: auto;
+    height: 200px;
+    width: 70%;
+    background-color: rgba(128, 128, 128, 0.281);
+    background-position: center;
+   display: none;
+}
+.btn .p p{
+    font-size: 23px;
+    padding: 12px;
+    
+}
+hr{
+    width: 70%;
+    color: black;
+    margin: auto;
+    background-color: black;
+}
+
+.btn .bn:active +.p{
+display: block;
+}
+
+
+footer{
+    margin-bottom: 100px;
+}
+.foot .a{
+visibility: hidden;
+}
+
+.foot{
+    display: flex;
+justify-content: space-around;
+line-height: 40px;
+}
+.foot li{
+ list-style: none;
+ font-weight: bold;
+}
+.foot a{
+    color: rgba(255, 255, 255, 0.518);
+    font-size: 15px;
+}
+footer .foot ul li .language{
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    padding: 7px 10px;
+    color: white;
+    background: none;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+
+.buttons  form h3{
+    font-size: 1.3rem;
+    margin: auto;
+    text-align: center;
+}
+.buttons form .email{
+    width: 1000px;
+    margin: auto;
+}
+.buttons form .email input{
+    height: 60px;
+    width: 400px;
+    margin: 10px;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: rgba(23, 21, 21, 0.648);
+   
+}
+.buttons form .email input:focus{
+    color: white;
+    font-size: 17px;
+    outline: none;
+    
+}
+.buttons form .email button{
+    margin: 10px;
+    height: 50px;
+    width: 180px;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    padding: 7px 17px;
+    background: #e50914;
+    cursor: pointer;
+    outline: none;
+   border-radius: 5px;
+    border: none;
+    margin-left: -5px;
+}
+.buttons form .email button:hover{
+    background-color: #f40612;
+}
+.buttons form .email button a{
+    text-decoration: none;
+    color: white;
+}
+
